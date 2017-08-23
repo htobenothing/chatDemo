@@ -1,4 +1,4 @@
 
 
-
-./node_modules
+# ignore lib
+/node_modules
