@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<script src="/socket.io/socket.io.js"></script>
+
 
 <body>
-    <div>
+    <!-- <div>
         <h1>Chat Room Application</h1>
         <ul id="messages"></ul>
     </div>
@@ -18,9 +18,41 @@
         <form action="">
             <input id="m" autocomplete="off" /><button type="button" id="send">Send</button>
         </form>
+    </div> -->
+
+    <table>
+        <tr>
+            <td>Local Video</td>
+            <td>Remote Video</td>
+        </tr>
+        <tr>
+            <td>
+                <video autoplay id="camLocal"></video>
+            </td>
+            <td>
+                <video autoplay id="camRemote"></video>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="btnStart">Start</button>
+                <button type="button" id="btnCall">Call</button>
+                <button type="button" id="btnHangup">Hangup</button>
+            </td>
+            
+        </tr>
+    </table>
+
+    <div>
+        <ul id="msglist"></ul>
+        <input type="text" id="msgInput">
+        <button type="button" id="btnSend">Send</button>
     </div>
+    
 
 </body>
+<script src="/socket.io/socket.io.js"></script>
+<!-- <script src='js/lib/adapter-latest.js'></script> -->
 <script src="js/client.js"></script>
 
 </html>
