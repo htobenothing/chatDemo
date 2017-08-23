@@ -8,7 +8,6 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-<<<<<<< HEAD
             "program": "${workspaceRoot}\\app.js",
             "cwd": "${workspaceRoot}"
         },
@@ -17,9 +16,7 @@
             "request": "attach",
             "name": "Attach to Process",
             "port": 5858
-=======
-            "program": "${workspaceRoot}/app.js"
->>>>>>> 52ac08e08b22867f78534833d7ba553fdfa0d5f1
+
         }
     ]
 }
